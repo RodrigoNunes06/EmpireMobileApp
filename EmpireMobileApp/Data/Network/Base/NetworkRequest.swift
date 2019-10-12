@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 
 class NetworkRequest {
+    
     var baseUrl: String = Api.baseURL
     var path = ""
     var method: HTTPMethod = .get
@@ -25,4 +26,5 @@ class NetworkRequest {
     func encoding() -> ParameterEncoding {
         return JSONEncoding.default
     }
+    
 }

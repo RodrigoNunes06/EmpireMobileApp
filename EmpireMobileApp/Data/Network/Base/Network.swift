@@ -30,32 +30,42 @@ final class Network: SessionManager {
     func requestObject<T: Decodable>(networkRequest: NetworkRequest, completion:@escaping((T?, Error?) -> Void)) {
         let headers = setupHeaders(request: networkRequest)
         
-        Alamofire.request(networkRequest.url, method: networkRequest.method, parameters: networkRequest.parameters, encoding: networkRequest.encoding(), headers: headers).validate().responseJSON { (response) in
-            
-            if let error = response.error {
-                completion(nil, error)
-            } else {
-                if let JSON = response.result.value as? Data {
-                    let parsedObject = try? JSONDecoder().decode(T.self, from: JSON)
-                    completion(parsedObject, nil)
+        Alamofire.request(networkRequest.url,
+                          method: networkRequest.method,
+                          parameters: networkRequest.parameters,
+                          encoding: networkRequest.encoding(),
+                          headers: headers)
+            .validate()
+            .responseJSON { (response) in
+                if let error = response.error {
+                    completion(nil, error)
+                } else {
+                    if let JSON = response.result.value as? Data {
+                        let parsedObject = try? JSONDecoder().decode(T.self, from: JSON)
+                        completion(parsedObject, nil)
+                    }
                 }
-            }
         }
     }
     
     func requestArray<T: Decodable>(networkRequest: NetworkRequest, completion:@escaping(([T]?, Error?) -> Void)) {
         let headers = setupHeaders(request: networkRequest)
         
-        Alamofire.request(networkRequest.url, method: networkRequest.method, parameters: networkRequest.parameters, encoding: networkRequest.encoding(), headers: headers).validate().responseJSON { (dataResponse) in
-            
-            if let error = dataResponse.error {
-                completion(nil, error)
-            } else {
-                if let JSON = dataResponse.result.value as? Data {
-                    let parsedObject = try? JSONDecoder().decode([T].self, from: JSON)
-                    completion(parsedObject, nil)
+        Alamofire.request(networkRequest.url,
+                          method: networkRequest.method,
+                          parameters: networkRequest.parameters,
+                          encoding: networkRequest.encoding(),
+                          headers: headers)
+            .validate()
+            .responseJSON { (dataResponse) in
+                if let error = dataResponse.error {
+                    completion(nil, error)
+                } else {
+                    if let JSON = dataResponse.result.value as? Data {
+                        let parsedObject = try? JSONDecoder().decode([T].self, from: JSON)
+                        completion(parsedObject, nil)
+                    }
                 }
-            }
         }
     }
 }

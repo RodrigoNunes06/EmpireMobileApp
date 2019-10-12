@@ -15,4 +15,8 @@ struct Trip {
     let duration: Int
     let pickUp: Location
     let dropOff: Location
+    
+    func getTripDuration() -> DateInterval {
+        return DateInterval(start: pickUp.date, end: dropOff.date)
+    }
 }

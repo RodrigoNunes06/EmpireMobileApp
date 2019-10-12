@@ -9,7 +9,6 @@
 import Foundation
 
 struct LocationEntityDataMapper {
-    
     static func transform(entity: LocationEntity) -> Location {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
@@ -19,5 +18,4 @@ struct LocationEntityDataMapper {
                         picture: pictureUrlString,
                         date: date)
     }
-    
 }

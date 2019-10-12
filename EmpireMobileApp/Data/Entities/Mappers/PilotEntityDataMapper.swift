@@ -9,12 +9,10 @@
 import Foundation
 
 struct PilotEntityDataMapper {
-    
     static func transform(entity: PilotEntity) -> Pilot {
         let avatarUrlString = Api.baseURL + entity.avatar
         return Pilot(name: entity.name,
                      avatar: avatarUrlString,
                      rating: entity.rating)
     }
-    
 }

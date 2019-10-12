@@ -9,9 +9,7 @@
 import Foundation
 
 struct DistanceEntityDataMapper {
-    
     static func transform(entity: DistanceEntity) -> Distance {
         return Distance(value: entity.value, unit: entity.unit)
     }
-    
 }

@@ -9,7 +9,6 @@
 import Foundation
 
 struct TripEntityDataMapper {
-    
     static func transform(entity: TripEntity) -> Trip {
         let pilot = PilotEntityDataMapper.transform(entity: entity.pilot)
         let distance = DistanceEntityDataMapper.transform(entity: entity.distance)
@@ -22,5 +21,4 @@ struct TripEntityDataMapper {
                     pickUp: pickUp,
                     dropOff: dropOff)
     }
-    
 }

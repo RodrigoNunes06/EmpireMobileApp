@@ -9,7 +9,7 @@
 import Foundation
 
 class NetworkProxy {
-    func process<T: Codable>( networkRequest: NetworkRequest, completion: @escaping(T?, Error?) -> Void) {
+    func process<T: Decodable>( networkRequest: NetworkRequest, completion: @escaping(T?, Error?) -> Void) {
         Network.shared.requestObject(networkRequest: networkRequest) { (object: T?, error) in
             if let error = error {
                  completion(nil, error)
@@ -19,7 +19,7 @@ class NetworkProxy {
         }
     }
     
-    func processArray<T: Codable>( networkRequest: NetworkRequest, completion: @escaping([T]?, Error?) -> Void) {
+    func processArray<T: Decodable>( networkRequest: NetworkRequest, completion: @escaping([T]?, Error?) -> Void) {
         Network.shared.requestArray(networkRequest: networkRequest) { (objectArray: [T]?, error) in
             if let error = error {
                 completion(nil, error)
