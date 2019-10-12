@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		745FCD39C2E2BC59561D3B94 /* Pods_EmpireMobileAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C884EA6A4F7F3046121EA2A3 /* Pods_EmpireMobileAppTests.framework */; };
 		9FB8971B235231BD004C3B85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8971A235231BD004C3B85 /* AppDelegate.swift */; };
-		9FB8971D235231BD004C3B85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8971C235231BD004C3B85 /* SceneDelegate.swift */; };
-		9FB8971F235231BD004C3B85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8971E235231BD004C3B85 /* ViewController.swift */; };
-		9FB89722235231BD004C3B85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB89720235231BD004C3B85 /* Main.storyboard */; };
 		9FB89724235231C0004C3B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB89723235231C0004C3B85 /* Assets.xcassets */; };
 		9FB89727235231C0004C3B85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB89725235231C0004C3B85 /* LaunchScreen.storyboard */; };
 		9FB89732235231C1004C3B85 /* EmpireMobileAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB89731235231C1004C3B85 /* EmpireMobileAppTests.swift */; };
 		9FB8973D235231C1004C3B85 /* EmpireMobileAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8973C235231C1004C3B85 /* EmpireMobileAppUITests.swift */; };
+		9FB8976423523614004C3B85 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8975223523614004C3B85 /* AppService.swift */; };
+		9FB8976523523614004C3B85 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8975423523614004C3B85 /* Network.swift */; };
+		9FB8976623523614004C3B85 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8975523523614004C3B85 /* NetworkRequest.swift */; };
+		9FB8976723523614004C3B85 /* NetworkProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8975623523614004C3B85 /* NetworkProxy.swift */; };
+		9FB8976823523614004C3B85 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8975723523614004C3B85 /* NetworkConstants.swift */; };
+		F6502AF8211261D13099B191 /* Pods_EmpireMobileAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6326B5020A2D097ECB3E1FAD /* Pods_EmpireMobileAppUITests.framework */; };
+		FE789A4FCE519F01F156DF15 /* Pods_EmpireMobileApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E269977F6FB23FD14D146F86 /* Pods_EmpireMobileApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54455089E435D1BABE4390C5 /* Pods-EmpireMobileAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileAppTests.release.xcconfig"; path = "Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		60003DA42FBB17B3408345D5 /* Pods-EmpireMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileApp.release.xcconfig"; path = "Target Support Files/Pods-EmpireMobileApp/Pods-EmpireMobileApp.release.xcconfig"; sourceTree = "<group>"; };
+		6326B5020A2D097ECB3E1FAD /* Pods_EmpireMobileAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmpireMobileAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A313B1F1340DAB7900D26BF /* Pods-EmpireMobileAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileAppTests.debug.xcconfig"; path = "Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7BFDA84938F8D34E065A5E69 /* Pods-EmpireMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileApp.debug.xcconfig"; path = "Target Support Files/Pods-EmpireMobileApp/Pods-EmpireMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9FB89717235231BD004C3B85 /* EmpireMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmpireMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB8971A235231BD004C3B85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FB8971C235231BD004C3B85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9FB8971E235231BD004C3B85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9FB89721235231BD004C3B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FB89723235231C0004C3B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FB89726235231C0004C3B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FB89728235231C0004C3B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,15 @@
 		9FB89738235231C1004C3B85 /* EmpireMobileAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmpireMobileAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB8973C235231C1004C3B85 /* EmpireMobileAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpireMobileAppUITests.swift; sourceTree = "<group>"; };
 		9FB8973E235231C1004C3B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FB8975223523614004C3B85 /* AppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		9FB8975423523614004C3B85 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		9FB8975523523614004C3B85 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		9FB8975623523614004C3B85 /* NetworkProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProxy.swift; sourceTree = "<group>"; };
+		9FB8975723523614004C3B85 /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		A087C61F03B37DDE06FEDDAB /* Pods-EmpireMobileAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileAppUITests.release.xcconfig"; path = "Target Support Files/Pods-EmpireMobileAppUITests/Pods-EmpireMobileAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C884EA6A4F7F3046121EA2A3 /* Pods_EmpireMobileAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmpireMobileAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E269977F6FB23FD14D146F86 /* Pods_EmpireMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmpireMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43F8EA97ACCB8D23CA05C83 /* Pods-EmpireMobileAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-EmpireMobileAppUITests/Pods-EmpireMobileAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE789A4FCE519F01F156DF15 /* Pods_EmpireMobileApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745FCD39C2E2BC59561D3B94 /* Pods_EmpireMobileAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6502AF8211261D13099B191 /* Pods_EmpireMobileAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +102,8 @@
 				9FB89730235231C1004C3B85 /* EmpireMobileAppTests */,
 				9FB8973B235231C1004C3B85 /* EmpireMobileAppUITests */,
 				9FB89718235231BD004C3B85 /* Products */,
+				B0751295CF04E97307155B91 /* Pods */,
+				C610311410A25AD64B80CC3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +120,9 @@
 		9FB89719235231BD004C3B85 /* EmpireMobileApp */ = {
 			isa = PBXGroup;
 			children = (
-				9FB8971A235231BD004C3B85 /* AppDelegate.swift */,
-				9FB8971C235231BD004C3B85 /* SceneDelegate.swift */,
-				9FB8971E235231BD004C3B85 /* ViewController.swift */,
-				9FB89720235231BD004C3B85 /* Main.storyboard */,
-				9FB89723235231C0004C3B85 /* Assets.xcassets */,
-				9FB89725235231C0004C3B85 /* LaunchScreen.storyboard */,
+				9FB8974F23523614004C3B85 /* Data */,
+				9FB8974B2352339D004C3B85 /* Domain */,
+				9FB8974A23523393004C3B85 /* App */,
 				9FB89728235231C0004C3B85 /* Info.plist */,
 			);
 			path = EmpireMobileApp;
@@ -128,6 +146,122 @@
 			path = EmpireMobileAppUITests;
 			sourceTree = "<group>";
 		};
+		9FB8974A23523393004C3B85 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9FB8971A235231BD004C3B85 /* AppDelegate.swift */,
+				9FB89725235231C0004C3B85 /* LaunchScreen.storyboard */,
+				9FB8974E235233B7004C3B85 /* Resources */,
+				9FB8974D235233B1004C3B85 /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9FB8974B2352339D004C3B85 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9FB8974D235233B1004C3B85 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9FB8974E235233B7004C3B85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FB89723235231C0004C3B85 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9FB8974F23523614004C3B85 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9FB8975023523614004C3B85 /* Network */,
+				9FB8975823523614004C3B85 /* Repositories */,
+				9FB8975C23523614004C3B85 /* Entities */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9FB8975023523614004C3B85 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9FB8975323523614004C3B85 /* Base */,
+				9FB8975123523614004C3B85 /* Service */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9FB8975123523614004C3B85 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9FB8975223523614004C3B85 /* AppService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9FB8975323523614004C3B85 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9FB8975423523614004C3B85 /* Network.swift */,
+				9FB8975523523614004C3B85 /* NetworkRequest.swift */,
+				9FB8975623523614004C3B85 /* NetworkProxy.swift */,
+				9FB8975723523614004C3B85 /* NetworkConstants.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9FB8975823523614004C3B85 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9FB8975C23523614004C3B85 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9FB8976023523614004C3B85 /* Mappers */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		9FB8976023523614004C3B85 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		B0751295CF04E97307155B91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BFDA84938F8D34E065A5E69 /* Pods-EmpireMobileApp.debug.xcconfig */,
+				60003DA42FBB17B3408345D5 /* Pods-EmpireMobileApp.release.xcconfig */,
+				6A313B1F1340DAB7900D26BF /* Pods-EmpireMobileAppTests.debug.xcconfig */,
+				54455089E435D1BABE4390C5 /* Pods-EmpireMobileAppTests.release.xcconfig */,
+				F43F8EA97ACCB8D23CA05C83 /* Pods-EmpireMobileAppUITests.debug.xcconfig */,
+				A087C61F03B37DDE06FEDDAB /* Pods-EmpireMobileAppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C610311410A25AD64B80CC3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E269977F6FB23FD14D146F86 /* Pods_EmpireMobileApp.framework */,
+				C884EA6A4F7F3046121EA2A3 /* Pods_EmpireMobileAppTests.framework */,
+				6326B5020A2D097ECB3E1FAD /* Pods_EmpireMobileAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FB89741235231C1004C3B85 /* Build configuration list for PBXNativeTarget "EmpireMobileApp" */;
 			buildPhases = (
+				62DFAEEAF901ADA0DBB8CEC6 /* [CP] Check Pods Manifest.lock */,
 				9FB89713235231BD004C3B85 /* Sources */,
 				9FB89714235231BD004C3B85 /* Frameworks */,
 				9FB89715235231BD004C3B85 /* Resources */,
+				6177356D696912686178587E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +288,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FB89744235231C1004C3B85 /* Build configuration list for PBXNativeTarget "EmpireMobileAppTests" */;
 			buildPhases = (
+				9AA67946FB7D44AC2E1BDD45 /* [CP] Check Pods Manifest.lock */,
 				9FB89729235231C1004C3B85 /* Sources */,
 				9FB8972A235231C1004C3B85 /* Frameworks */,
 				9FB8972B235231C1004C3B85 /* Resources */,
@@ -170,6 +307,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FB89747235231C1004C3B85 /* Build configuration list for PBXNativeTarget "EmpireMobileAppUITests" */;
 			buildPhases = (
+				0A7BE0ED31820C0E5D5C8477 /* [CP] Check Pods Manifest.lock */,
 				9FB89734235231C1004C3B85 /* Sources */,
 				9FB89735235231C1004C3B85 /* Frameworks */,
 				9FB89736235231C1004C3B85 /* Resources */,
@@ -234,7 +372,6 @@
 			files = (
 				9FB89727235231C0004C3B85 /* LaunchScreen.storyboard in Resources */,
 				9FB89724235231C0004C3B85 /* Assets.xcassets in Resources */,
-				9FB89722235231BD004C3B85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +391,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A7BE0ED31820C0E5D5C8477 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmpireMobileAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6177356D696912686178587E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileApp/Pods-EmpireMobileApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileApp/Pods-EmpireMobileApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62DFAEEAF901ADA0DBB8CEC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmpireMobileApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AA67946FB7D44AC2E1BDD45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmpireMobileAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9FB89713235231BD004C3B85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FB8971F235231BD004C3B85 /* ViewController.swift in Sources */,
+				9FB8976823523614004C3B85 /* NetworkConstants.swift in Sources */,
 				9FB8971B235231BD004C3B85 /* AppDelegate.swift in Sources */,
-				9FB8971D235231BD004C3B85 /* SceneDelegate.swift in Sources */,
+				9FB8976423523614004C3B85 /* AppService.swift in Sources */,
+				9FB8976723523614004C3B85 /* NetworkProxy.swift in Sources */,
+				9FB8976623523614004C3B85 /* NetworkRequest.swift in Sources */,
+				9FB8976523523614004C3B85 /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +534,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9FB89720235231BD004C3B85 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9FB89721235231BD004C3B85 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9FB89725235231C0004C3B85 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,11 +661,13 @@
 		};
 		9FB89742235231C1004C3B85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BFDA84938F8D34E065A5E69 /* Pods-EmpireMobileApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WULF96SQ4T;
 				INFOPLIST_FILE = EmpireMobileApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +681,13 @@
 		};
 		9FB89743235231C1004C3B85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60003DA42FBB17B3408345D5 /* Pods-EmpireMobileApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WULF96SQ4T;
 				INFOPLIST_FILE = EmpireMobileApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +701,7 @@
 		};
 		9FB89745235231C1004C3B85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A313B1F1340DAB7900D26BF /* Pods-EmpireMobileAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +724,7 @@
 		};
 		9FB89746235231C1004C3B85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54455089E435D1BABE4390C5 /* Pods-EmpireMobileAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +747,7 @@
 		};
 		9FB89748235231C1004C3B85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F43F8EA97ACCB8D23CA05C83 /* Pods-EmpireMobileAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +768,7 @@
 		};
 		9FB89749235231C1004C3B85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A087C61F03B37DDE06FEDDAB /* Pods-EmpireMobileAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
