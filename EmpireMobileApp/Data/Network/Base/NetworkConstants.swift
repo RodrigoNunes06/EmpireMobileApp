@@ -9,7 +9,7 @@
 import Foundation
 
 struct Api {
-    static let baseURL = "https://starwars.kapten.com/"
+    static let baseURL = "https://starwars.kapten.com"
     
     static let headerAuthorizationKey = "Authorization"
     static let headerContentTypeKey = "Content-Type"
@@ -18,6 +18,6 @@ struct Api {
     static let headerContentTypeValue = "application/json"
     static let headerAcceptedLanguage = "Accept-Language"
     
-    static let pathTrips = "/trips"
+    static let pathTrips = "/trips/"
     static let pathTrip = "/trip/%@"
 }

@@ -1,5 +1,5 @@
 //
-//  TripEntity.swift
+//  Trip.swift
 //  EmpireMobileApp
 //
 //  Created by Rodrigo Nunes on 10/12/19.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct TripEntity: Codable {
+struct Trip {
     let id: Int
-    let pilot: PilotEntity
-    let distance: DistanceEntity
+    let pilot: Pilot
+    let distance: Distance
     let duration: Int
-    let pickUp: LocationEntity
-    let dropOff: LocationEntity
+    let pickUp: Location
+    let dropOff: Location
 }
