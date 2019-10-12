@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FB8971B235231BD004C3B85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8971A235231BD004C3B85 /* AppDelegate.swift */; };
+		9FB8971D235231BD004C3B85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8971C235231BD004C3B85 /* SceneDelegate.swift */; };
+		9FB8971F235231BD004C3B85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8971E235231BD004C3B85 /* ViewController.swift */; };
+		9FB89722235231BD004C3B85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB89720235231BD004C3B85 /* Main.storyboard */; };
+		9FB89724235231C0004C3B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB89723235231C0004C3B85 /* Assets.xcassets */; };
+		9FB89727235231C0004C3B85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB89725235231C0004C3B85 /* LaunchScreen.storyboard */; };
+		9FB89732235231C1004C3B85 /* EmpireMobileAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB89731235231C1004C3B85 /* EmpireMobileAppTests.swift */; };
+		9FB8973D235231C1004C3B85 /* EmpireMobileAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8973C235231C1004C3B85 /* EmpireMobileAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FB8972E235231C1004C3B85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FB8970F235231BD004C3B85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FB89716235231BD004C3B85;
+			remoteInfo = EmpireMobileApp;
+		};
+		9FB89739235231C1004C3B85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FB8970F235231BD004C3B85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FB89716235231BD004C3B85;
+			remoteInfo = EmpireMobileApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FB89717235231BD004C3B85 /* EmpireMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmpireMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FB8971A235231BD004C3B85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FB8971C235231BD004C3B85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9FB8971E235231BD004C3B85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FB89721235231BD004C3B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FB89723235231C0004C3B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FB89726235231C0004C3B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FB89728235231C0004C3B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FB8972D235231C1004C3B85 /* EmpireMobileAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmpireMobileAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FB89731235231C1004C3B85 /* EmpireMobileAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpireMobileAppTests.swift; sourceTree = "<group>"; };
+		9FB89733235231C1004C3B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FB89738235231C1004C3B85 /* EmpireMobileAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmpireMobileAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FB8973C235231C1004C3B85 /* EmpireMobileAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpireMobileAppUITests.swift; sourceTree = "<group>"; };
+		9FB8973E235231C1004C3B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FB89714235231BD004C3B85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB8972A235231C1004C3B85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB89735235231C1004C3B85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FB8970E235231BD004C3B85 = {
+			isa = PBXGroup;
+			children = (
+				9FB89719235231BD004C3B85 /* EmpireMobileApp */,
+				9FB89730235231C1004C3B85 /* EmpireMobileAppTests */,
+				9FB8973B235231C1004C3B85 /* EmpireMobileAppUITests */,
+				9FB89718235231BD004C3B85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FB89718235231BD004C3B85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FB89717235231BD004C3B85 /* EmpireMobileApp.app */,
+				9FB8972D235231C1004C3B85 /* EmpireMobileAppTests.xctest */,
+				9FB89738235231C1004C3B85 /* EmpireMobileAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FB89719235231BD004C3B85 /* EmpireMobileApp */ = {
+			isa = PBXGroup;
+			children = (
+				9FB8971A235231BD004C3B85 /* AppDelegate.swift */,
+				9FB8971C235231BD004C3B85 /* SceneDelegate.swift */,
+				9FB8971E235231BD004C3B85 /* ViewController.swift */,
+				9FB89720235231BD004C3B85 /* Main.storyboard */,
+				9FB89723235231C0004C3B85 /* Assets.xcassets */,
+				9FB89725235231C0004C3B85 /* LaunchScreen.storyboard */,
+				9FB89728235231C0004C3B85 /* Info.plist */,
+			);
+			path = EmpireMobileApp;
+			sourceTree = "<group>";
+		};
+		9FB89730235231C1004C3B85 /* EmpireMobileAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FB89731235231C1004C3B85 /* EmpireMobileAppTests.swift */,
+				9FB89733235231C1004C3B85 /* Info.plist */,
+			);
+			path = EmpireMobileAppTests;
+			sourceTree = "<group>";
+		};
+		9FB8973B235231C1004C3B85 /* EmpireMobileAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9FB8973C235231C1004C3B85 /* EmpireMobileAppUITests.swift */,
+				9FB8973E235231C1004C3B85 /* Info.plist */,
+			);
+			path = EmpireMobileAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FB89716235231BD004C3B85 /* EmpireMobileApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FB89741235231C1004C3B85 /* Build configuration list for PBXNativeTarget "EmpireMobileApp" */;
+			buildPhases = (
+				9FB89713235231BD004C3B85 /* Sources */,
+				9FB89714235231BD004C3B85 /* Frameworks */,
+				9FB89715235231BD004C3B85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmpireMobileApp;
+			productName = EmpireMobileApp;
+			productReference = 9FB89717235231BD004C3B85 /* EmpireMobileApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FB8972C235231C1004C3B85 /* EmpireMobileAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FB89744235231C1004C3B85 /* Build configuration list for PBXNativeTarget "EmpireMobileAppTests" */;
+			buildPhases = (
+				9FB89729235231C1004C3B85 /* Sources */,
+				9FB8972A235231C1004C3B85 /* Frameworks */,
+				9FB8972B235231C1004C3B85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FB8972F235231C1004C3B85 /* PBXTargetDependency */,
+			);
+			name = EmpireMobileAppTests;
+			productName = EmpireMobileAppTests;
+			productReference = 9FB8972D235231C1004C3B85 /* EmpireMobileAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FB89737235231C1004C3B85 /* EmpireMobileAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FB89747235231C1004C3B85 /* Build configuration list for PBXNativeTarget "EmpireMobileAppUITests" */;
+			buildPhases = (
+				9FB89734235231C1004C3B85 /* Sources */,
+				9FB89735235231C1004C3B85 /* Frameworks */,
+				9FB89736235231C1004C3B85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FB8973A235231C1004C3B85 /* PBXTargetDependency */,
+			);
+			name = EmpireMobileAppUITests;
+			productName = EmpireMobileAppUITests;
+			productReference = 9FB89738235231C1004C3B85 /* EmpireMobileAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FB8970F235231BD004C3B85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Rodrigo Nunes Gil";
+				TargetAttributes = {
+					9FB89716235231BD004C3B85 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					9FB8972C235231C1004C3B85 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 9FB89716235231BD004C3B85;
+					};
+					9FB89737235231C1004C3B85 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 9FB89716235231BD004C3B85;
+					};
+				};
+			};
+			buildConfigurationList = 9FB89712235231BD004C3B85 /* Build configuration list for PBXProject "EmpireMobileApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FB8970E235231BD004C3B85;
+			productRefGroup = 9FB89718235231BD004C3B85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FB89716235231BD004C3B85 /* EmpireMobileApp */,
+				9FB8972C235231C1004C3B85 /* EmpireMobileAppTests */,
+				9FB89737235231C1004C3B85 /* EmpireMobileAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FB89715235231BD004C3B85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB89727235231C0004C3B85 /* LaunchScreen.storyboard in Resources */,
+				9FB89724235231C0004C3B85 /* Assets.xcassets in Resources */,
+				9FB89722235231BD004C3B85 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB8972B235231C1004C3B85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB89736235231C1004C3B85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FB89713235231BD004C3B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB8971F235231BD004C3B85 /* ViewController.swift in Sources */,
+				9FB8971B235231BD004C3B85 /* AppDelegate.swift in Sources */,
+				9FB8971D235231BD004C3B85 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB89729235231C1004C3B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB89732235231C1004C3B85 /* EmpireMobileAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB89734235231C1004C3B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB8973D235231C1004C3B85 /* EmpireMobileAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FB8972F235231C1004C3B85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FB89716235231BD004C3B85 /* EmpireMobileApp */;
+			targetProxy = 9FB8972E235231C1004C3B85 /* PBXContainerItemProxy */;
+		};
+		9FB8973A235231C1004C3B85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FB89716235231BD004C3B85 /* EmpireMobileApp */;
+			targetProxy = 9FB89739235231C1004C3B85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FB89720235231BD004C3B85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FB89721235231BD004C3B85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9FB89725235231C0004C3B85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FB89726235231C0004C3B85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FB8973F235231C1004C3B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FB89740235231C1004C3B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FB89742235231C1004C3B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WULF96SQ4T;
+				INFOPLIST_FILE = EmpireMobileApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigonunesgil.EmpireMobileApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FB89743235231C1004C3B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WULF96SQ4T;
+				INFOPLIST_FILE = EmpireMobileApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigonunesgil.EmpireMobileApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9FB89745235231C1004C3B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WULF96SQ4T;
+				INFOPLIST_FILE = EmpireMobileAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigonunesgil.EmpireMobileAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmpireMobileApp.app/EmpireMobileApp";
+			};
+			name = Debug;
+		};
+		9FB89746235231C1004C3B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WULF96SQ4T;
+				INFOPLIST_FILE = EmpireMobileAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigonunesgil.EmpireMobileAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmpireMobileApp.app/EmpireMobileApp";
+			};
+			name = Release;
+		};
+		9FB89748235231C1004C3B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WULF96SQ4T;
+				INFOPLIST_FILE = EmpireMobileAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigonunesgil.EmpireMobileAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmpireMobileApp;
+			};
+			name = Debug;
+		};
+		9FB89749235231C1004C3B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WULF96SQ4T;
+				INFOPLIST_FILE = EmpireMobileAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigonunesgil.EmpireMobileAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmpireMobileApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FB89712235231BD004C3B85 /* Build configuration list for PBXProject "EmpireMobileApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FB8973F235231C1004C3B85 /* Debug */,
+				9FB89740235231C1004C3B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FB89741235231C1004C3B85 /* Build configuration list for PBXNativeTarget "EmpireMobileApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FB89742235231C1004C3B85 /* Debug */,
+				9FB89743235231C1004C3B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FB89744235231C1004C3B85 /* Build configuration list for PBXNativeTarget "EmpireMobileAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FB89745235231C1004C3B85 /* Debug */,
+				9FB89746235231C1004C3B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FB89747235231C1004C3B85 /* Build configuration list for PBXNativeTarget "EmpireMobileAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FB89748235231C1004C3B85 /* Debug */,
+				9FB89749235231C1004C3B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FB8970F235231BD004C3B85 /* Project object */;
+}
