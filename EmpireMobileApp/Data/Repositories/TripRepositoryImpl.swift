@@ -29,7 +29,9 @@ class TripRepositoryImpl: TripRepository {
             if let error = error {
                 completion(nil, error)
             } else {
-                let trip = TripEntityDataMapper.transform(entity: tripEntity)
+                let trip =  tripEntity.map {
+                    TripEntityDataMapper.transform(entity: $0)
+                }
                 completion(trip, nil)
             }
         }
