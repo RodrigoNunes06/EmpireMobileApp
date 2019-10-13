@@ -13,7 +13,7 @@ class NetworkProxy {
         Network.shared.requestObject(networkRequest: networkRequest) { (object: T?, error) in
             if let error = error {
                  completion(nil, error)
-            } else if let object = object {
+            } else {
                  completion(object, nil)
             }
         }
@@ -23,7 +23,7 @@ class NetworkProxy {
         Network.shared.requestArray(networkRequest: networkRequest) { (objectArray: [T]?, error) in
             if let error = error {
                 completion(nil, error)
-            } else if let objectArray = objectArray {
+            } else {
                 completion(objectArray, nil)
             }
         }
