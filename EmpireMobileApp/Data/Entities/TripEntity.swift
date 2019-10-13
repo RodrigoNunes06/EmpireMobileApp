@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TripEntity: Codable {
+struct TripEntity: Decodable {
     let id: Int
     let pilot: PilotEntity
     let distance: DistanceEntity

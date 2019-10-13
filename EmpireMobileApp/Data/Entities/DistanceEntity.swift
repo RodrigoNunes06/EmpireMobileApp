@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct DistanceEntity: Codable {
+struct DistanceEntity: Decodable {
     let value: Int
     let unit: String
 }

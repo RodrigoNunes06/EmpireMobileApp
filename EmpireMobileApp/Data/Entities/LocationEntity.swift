@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct LocationEntity: Codable {
+struct LocationEntity: Decodable {
     let name: String
     let picture: String
     let date: String

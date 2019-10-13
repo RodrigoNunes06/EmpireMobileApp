@@ -40,8 +40,10 @@ final class Network: SessionManager {
                 if let error = response.error {
                     completion(nil, error)
                 } else {
-                    if let JSON = response.result.value as? Data {
-                        let parsedObject = try? JSONDecoder().decode(T.self, from: JSON)
+                    if let data = response.data {
+                        let decoder = JSONDecoder()
+                        decoder.keyDecodingStrategy = .convertFromSnakeCase
+                        let parsedObject = try? decoder.decode(T.self, from: data)
                         completion(parsedObject, nil)
                     }
                 }
@@ -61,8 +63,10 @@ final class Network: SessionManager {
                 if let error = dataResponse.error {
                     completion(nil, error)
                 } else {
-                    if let JSON = dataResponse.result.value as? Data {
-                        let parsedObject = try? JSONDecoder().decode([T].self, from: JSON)
+                    if let data = dataResponse.data {
+                        let decoder = JSONDecoder()
+                        decoder.keyDecodingStrategy = .convertFromSnakeCase
+                        let parsedObject = try? decoder.decode([T].self, from: data)
                         completion(parsedObject, nil)
                     }
                 }

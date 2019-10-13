@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct PilotEntity: Codable {
+struct PilotEntity: Decodable {
     let name: String
     let avatar: String
-    let rating: Int
+    let rating: Float
 }

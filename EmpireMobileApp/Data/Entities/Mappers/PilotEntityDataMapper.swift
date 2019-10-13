@@ -13,6 +13,6 @@ struct PilotEntityDataMapper {
         let avatarUrlString = Api.baseURL + entity.avatar
         return Pilot(name: entity.name,
                      avatar: avatarUrlString,
-                     rating: entity.rating)
+                     rating: Int(entity.rating))
     }
 }
