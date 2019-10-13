@@ -7,6 +7,7 @@ target 'EmpireMobileApp' do
   pod 'Alamofire'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Kingfisher'
 
   target 'EmpireMobileAppTests' do
     inherit! :search_paths
