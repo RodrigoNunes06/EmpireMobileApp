@@ -33,7 +33,6 @@
 		9FB8978A23525B1E004C3B85 /* TripEntityDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8978923525B1E004C3B85 /* TripEntityDataMapper.swift */; };
 		9FB8978E23528CBA004C3B85 /* TripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8978D23528CBA004C3B85 /* TripRepository.swift */; };
 		9FB8979023528D3B004C3B85 /* GetTripsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8978F23528D3B004C3B85 /* GetTripsUseCase.swift */; };
-		9FB8979223528EE6004C3B85 /* BaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8979123528EE6004C3B85 /* BaseUseCase.swift */; };
 		9FB8979423528F48004C3B85 /* TripRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8979323528F48004C3B85 /* TripRepositoryImpl.swift */; };
 		9FB89797235291D1004C3B85 /* GetTripUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB89796235291D1004C3B85 /* GetTripUseCase.swift */; };
 		9FB8979D23531E77004C3B85 /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8979B23531E77004C3B85 /* TripListViewController.swift */; };
@@ -111,7 +110,6 @@
 		9FB8978923525B1E004C3B85 /* TripEntityDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripEntityDataMapper.swift; sourceTree = "<group>"; };
 		9FB8978D23528CBA004C3B85 /* TripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRepository.swift; sourceTree = "<group>"; };
 		9FB8978F23528D3B004C3B85 /* GetTripsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsUseCase.swift; sourceTree = "<group>"; };
-		9FB8979123528EE6004C3B85 /* BaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUseCase.swift; sourceTree = "<group>"; };
 		9FB8979323528F48004C3B85 /* TripRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRepositoryImpl.swift; sourceTree = "<group>"; };
 		9FB89796235291D1004C3B85 /* GetTripUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripUseCase.swift; sourceTree = "<group>"; };
 		9FB8979B23531E77004C3B85 /* TripListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListViewController.swift; sourceTree = "<group>"; };
@@ -362,7 +360,6 @@
 		9FB8978C23528C88004C3B85 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				9FB8979123528EE6004C3B85 /* BaseUseCase.swift */,
 				9FB8978F23528D3B004C3B85 /* GetTripsUseCase.swift */,
 				9FB89796235291D1004C3B85 /* GetTripUseCase.swift */,
 			);
@@ -717,7 +714,6 @@
 				9FB8976823523614004C3B85 /* NetworkConstants.swift in Sources */,
 				9FB897732352527E004C3B85 /* PilotEntity.swift in Sources */,
 				9FB897C023537657004C3B85 /* NibView.swift in Sources */,
-				9FB8979223528EE6004C3B85 /* BaseUseCase.swift in Sources */,
 				9FB897AE2353211D004C3B85 /* TripDetailViewModel.swift in Sources */,
 				9FB897C223537696004C3B85 /* UIViewExtension.swift in Sources */,
 				9FB8978A23525B1E004C3B85 /* TripEntityDataMapper.swift in Sources */,
