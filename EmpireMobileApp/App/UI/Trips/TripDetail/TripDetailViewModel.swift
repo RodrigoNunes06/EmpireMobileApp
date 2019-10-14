@@ -112,7 +112,7 @@ private extension TripDetailViewModel {
     func transformDateToDateString(date: Date) -> String {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.dateFormat = "h:mm"
+        formatter.dateFormat = "h:mm a"
         formatter.amSymbol = "AM"
         formatter.pmSymbol = "PM"
         return formatter.string(from: date)

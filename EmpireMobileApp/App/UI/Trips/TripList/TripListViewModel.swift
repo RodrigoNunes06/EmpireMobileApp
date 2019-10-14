@@ -52,6 +52,7 @@ extension TripListViewModel: TripListViewModelApi {
     }
     
     func onViewDidLoad() {
+        loading.onNext(true)
         getTripsUseCase.execute {[weak self] (tripList, error) in
             guard let self = self else { return }
             if let error = error {
@@ -59,6 +60,7 @@ extension TripListViewModel: TripListViewModelApi {
             } else if let tripList = tripList {
                 self.trips = tripList
             }
+            self.loading.onNext(false)
             self.reload.onNext(())
         }
     }
