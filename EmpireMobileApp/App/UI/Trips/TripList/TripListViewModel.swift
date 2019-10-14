@@ -22,14 +22,14 @@ protocol TripListViewModelApi {
 }
 
 class TripListViewModel {
-    private let getTripsUseCase: GetTripsUseCase!
+    private let getTripsUseCase: GetTripsUseCaseApi!
     private let coordinator: TripCoordinatorApi!
     private var trips: [Trip] = []
     private let reload = PublishSubject<Void>()
     private let error = PublishSubject<Error>()
     private let loading = PublishSubject<Bool>()
     
-    init(coordinator: TripCoordinatorApi, getTripsUseCase: GetTripsUseCase) {
+    init(coordinator: TripCoordinatorApi, getTripsUseCase: GetTripsUseCaseApi) {
         self.getTripsUseCase = getTripsUseCase
         self.coordinator = coordinator
     }

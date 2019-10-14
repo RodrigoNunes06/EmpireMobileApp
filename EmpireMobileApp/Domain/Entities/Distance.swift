@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Distance {
+struct Distance: Equatable {
     let value: Int
     let unit: String
 }

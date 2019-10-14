@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Pilot {
+struct Pilot: Equatable {
     let name: String
     let avatar: String
     let rating: Int

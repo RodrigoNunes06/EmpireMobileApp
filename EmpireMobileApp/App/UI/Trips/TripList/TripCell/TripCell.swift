@@ -55,9 +55,9 @@ private extension TripCell {
             self.userImageView.kf.setImage(with: imageURL)
         }).disposed(by: disposeBag)
         
-        viewModel.pilotRating.subscribe(onNext: {[unowned self] rating in
-            guard let rating = rating, rating > 0 else { return }
-            self.setupPilotRating(rating: rating)
+        viewModel.pilotRating.subscribe(onNext: {[unowned self] ratingViewViewModel in
+            guard ratingViewViewModel.rating > 0 else { return }
+            self.setupPilotRating(ratingViewViewModel: ratingViewViewModel)
         }).disposed(by: disposeBag)
         
         viewModel.pickupLocation.subscribe(onNext: {[unowned self] pickUpLocation in
@@ -69,9 +69,9 @@ private extension TripCell {
         }).disposed(by: disposeBag)
     }
     
-    func setupPilotRating(rating: Int) {
+    func setupPilotRating(ratingViewViewModel: RatingViewViewModel) {
         ratingView.isHidden = false
-        ratingView.setup(viewModel: viewModel!.getRatingViewModel())
+        ratingView.setup(viewModel: ratingViewViewModel)
         stackView.addArrangedSubview(ratingView)
     }
 }

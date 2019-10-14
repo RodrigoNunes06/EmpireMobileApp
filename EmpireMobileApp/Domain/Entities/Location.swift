@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Location {
+struct Location: Equatable {
     let name: String
     let picture: String
     let date: Date
