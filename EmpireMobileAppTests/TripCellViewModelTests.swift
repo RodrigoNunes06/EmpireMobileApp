@@ -7,27 +7,95 @@
 //
 
 import XCTest
+import RxSwift
+import RxCocoa
+import RxTest
+
+@testable import EmpireMobileApp
 
 class TripCellViewModelTests: XCTestCase {
 
+    var viewModel: TripCellViewModelApi!
+    var disposeBag: DisposeBag!
+    var scheduler: TestScheduler!
+    let pilot = Pilot(name: "Skywalker", avatar: "avatar", rating: 5)
+    let pickupLocation = "Naboo"
+    let dropOffLocation = "Coruscant"
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        scheduler = TestScheduler(initialClock: 0)
+        disposeBag = DisposeBag()
+        viewModel = TripCellViewModel(pilot: pilot,
+                                      pickupLocation: pickupLocation,
+                                      dropOffLocation: dropOffLocation)
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testPilotName() {
+        let observer = scheduler.createObserver(String.self)
+        viewModel.pilotName
+            .asDriver(onErrorJustReturn: "Error")
+            .drive(observer)
+            .disposed(by: disposeBag)
+        scheduler.start()
+        
+        let expectedEvent = Recorded.next(0, pilot.name)
+        XCTAssertEqual(observer.events.first!, expectedEvent)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testPilotImage() {
+        let observer = scheduler.createObserver(String.self)
+        viewModel.pilotImage
+            .asDriver(onErrorJustReturn: "Error")
+            .drive(observer)
+            .disposed(by: disposeBag)
+        scheduler.start()
+        
+        let expectedEvent = Recorded.next(0, pilot.avatar)
+        XCTAssertEqual(observer.events.first!, expectedEvent)
     }
-
+    
+    func testPilotRating() {
+        let observer = scheduler.createObserver(RatingViewViewModel.self)
+        viewModel.pilotRating
+            .asDriver(onErrorJustReturn: RatingViewViewModel(rating: 0, style: .big))
+            .drive(observer)
+            .disposed(by: disposeBag)
+        scheduler.start()
+        
+        let expectedViewModel = RatingViewViewModel(rating: pilot.rating,
+                                                    style: .small)
+        
+        let expectedEvent = Recorded.next(0, expectedViewModel)
+        XCTAssertEqual(observer.events.first!, expectedEvent)
+    }
+    
+    func testPickupLocation() {
+        let observer = scheduler.createObserver(String.self)
+        viewModel.pickupLocation
+            .asDriver(onErrorJustReturn: "Error")
+            .drive(observer)
+            .disposed(by: disposeBag)
+        scheduler.start()
+        
+        let expectedEvent = Recorded.next(0, pickupLocation)
+        XCTAssertEqual(observer.events.first!, expectedEvent)
+    }
+    
+    func testDropOffLocation() {
+        let observer = scheduler.createObserver(String.self)
+        viewModel.dropOffLocation
+            .asDriver(onErrorJustReturn: "Error")
+            .drive(observer)
+            .disposed(by: disposeBag)
+        scheduler.start()
+        
+        let expectedEvent = Recorded.next(0, dropOffLocation)
+        XCTAssertEqual(observer.events.first!, expectedEvent)
+    }
 }
+

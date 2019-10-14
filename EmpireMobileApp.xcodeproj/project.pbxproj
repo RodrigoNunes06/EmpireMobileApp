@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		745FCD39C2E2BC59561D3B94 /* Pods_EmpireMobileAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C884EA6A4F7F3046121EA2A3 /* Pods_EmpireMobileAppTests.framework */; };
+		2B3F0F64D671773C5778DDBE /* Pods_EmpireMobileApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA3BD22FC0505A135FC549F /* Pods_EmpireMobileApp.framework */; };
+		54DD6375300EC736C5F8019D /* Pods_EmpireMobileAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00CB757EE67E79ABD73A507 /* Pods_EmpireMobileAppTests.framework */; };
+		9FA16369235507CC00FF60FE /* TripCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA16368235507CC00FF60FE /* TripCellViewModelTests.swift */; };
 		9FB8971B235231BD004C3B85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8971A235231BD004C3B85 /* AppDelegate.swift */; };
 		9FB89724235231C0004C3B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB89723235231C0004C3B85 /* Assets.xcassets */; };
 		9FB89727235231C0004C3B85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB89725235231C0004C3B85 /* LaunchScreen.storyboard */; };
@@ -53,8 +55,7 @@
 		9FB897C42354A9D1004C3B85 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB897C32354A9D1004C3B85 /* Mock.generated.swift */; };
 		9FB897C62354AEC5004C3B85 /* TripListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB897C52354AEC5004C3B85 /* TripListViewModelTests.swift */; };
 		9FB897C82354AEEE004C3B85 /* TripDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB897C72354AEEE004C3B85 /* TripDetailViewModelTests.swift */; };
-		F6502AF8211261D13099B191 /* Pods_EmpireMobileAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6326B5020A2D097ECB3E1FAD /* Pods_EmpireMobileAppUITests.framework */; };
-		FE789A4FCE519F01F156DF15 /* Pods_EmpireMobileApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E269977F6FB23FD14D146F86 /* Pods_EmpireMobileApp.framework */; };
+		BFE5C88BFF9A0FFB066AF0FE /* Pods_EmpireMobileApp_EmpireMobileAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02E67F635149FF9D307698E /* Pods_EmpireMobileApp_EmpireMobileAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,11 +76,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		54455089E435D1BABE4390C5 /* Pods-EmpireMobileAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileAppTests.release.xcconfig"; path = "Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		60003DA42FBB17B3408345D5 /* Pods-EmpireMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileApp.release.xcconfig"; path = "Target Support Files/Pods-EmpireMobileApp/Pods-EmpireMobileApp.release.xcconfig"; sourceTree = "<group>"; };
-		6326B5020A2D097ECB3E1FAD /* Pods_EmpireMobileAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmpireMobileAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A313B1F1340DAB7900D26BF /* Pods-EmpireMobileAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileAppTests.debug.xcconfig"; path = "Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7BFDA84938F8D34E065A5E69 /* Pods-EmpireMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileApp.debug.xcconfig"; path = "Target Support Files/Pods-EmpireMobileApp/Pods-EmpireMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
+		14F55E14B04CF5445C62FE34 /* Pods-EmpireMobileApp-EmpireMobileAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileApp-EmpireMobileAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-EmpireMobileApp-EmpireMobileAppUITests/Pods-EmpireMobileApp-EmpireMobileAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		30A5B39C31B8CAEBFAFCA34B /* Pods-EmpireMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileApp.debug.xcconfig"; path = "Target Support Files/Pods-EmpireMobileApp/Pods-EmpireMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
+		66915BFE11CD7746A006C31D /* Pods-EmpireMobileAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileAppTests.debug.xcconfig"; path = "Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D001AAC341A688502305E7B /* Pods-EmpireMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileApp.release.xcconfig"; path = "Target Support Files/Pods-EmpireMobileApp/Pods-EmpireMobileApp.release.xcconfig"; sourceTree = "<group>"; };
+		7B6E81BD99061DB478133EDD /* Pods-EmpireMobileAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileAppTests.release.xcconfig"; path = "Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9FA16368235507CC00FF60FE /* TripCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCellViewModelTests.swift; sourceTree = "<group>"; };
 		9FB89717235231BD004C3B85 /* EmpireMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmpireMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB8971A235231BD004C3B85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FB89723235231C0004C3B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,10 +133,10 @@
 		9FB897C32354A9D1004C3B85 /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
 		9FB897C52354AEC5004C3B85 /* TripListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListViewModelTests.swift; sourceTree = "<group>"; };
 		9FB897C72354AEEE004C3B85 /* TripDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewModelTests.swift; sourceTree = "<group>"; };
-		A087C61F03B37DDE06FEDDAB /* Pods-EmpireMobileAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileAppUITests.release.xcconfig"; path = "Target Support Files/Pods-EmpireMobileAppUITests/Pods-EmpireMobileAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C884EA6A4F7F3046121EA2A3 /* Pods_EmpireMobileAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmpireMobileAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E269977F6FB23FD14D146F86 /* Pods_EmpireMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmpireMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F43F8EA97ACCB8D23CA05C83 /* Pods-EmpireMobileAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-EmpireMobileAppUITests/Pods-EmpireMobileAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A159C770525B8DAC0860BA2E /* Pods-EmpireMobileApp-EmpireMobileAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileApp-EmpireMobileAppUITests.release.xcconfig"; path = "Target Support Files/Pods-EmpireMobileApp-EmpireMobileAppUITests/Pods-EmpireMobileApp-EmpireMobileAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ADA3BD22FC0505A135FC549F /* Pods_EmpireMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmpireMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D02E67F635149FF9D307698E /* Pods_EmpireMobileApp_EmpireMobileAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmpireMobileApp_EmpireMobileAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00CB757EE67E79ABD73A507 /* Pods_EmpireMobileAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmpireMobileAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE789A4FCE519F01F156DF15 /* Pods_EmpireMobileApp.framework in Frameworks */,
+				2B3F0F64D671773C5778DDBE /* Pods_EmpireMobileApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				745FCD39C2E2BC59561D3B94 /* Pods_EmpireMobileAppTests.framework in Frameworks */,
+				54DD6375300EC736C5F8019D /* Pods_EmpireMobileAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,13 +160,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6502AF8211261D13099B191 /* Pods_EmpireMobileAppUITests.framework in Frameworks */,
+				BFE5C88BFF9A0FFB066AF0FE /* Pods_EmpireMobileApp_EmpireMobileAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		536E26056F0E25656858A4BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADA3BD22FC0505A135FC549F /* Pods_EmpireMobileApp.framework */,
+				D02E67F635149FF9D307698E /* Pods_EmpireMobileApp_EmpireMobileAppUITests.framework */,
+				E00CB757EE67E79ABD73A507 /* Pods_EmpireMobileAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9FB8970E235231BD004C3B85 = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +186,7 @@
 				9FB8973B235231C1004C3B85 /* EmpireMobileAppUITests */,
 				9FB89718235231BD004C3B85 /* Products */,
 				B0751295CF04E97307155B91 /* Pods */,
-				C610311410A25AD64B80CC3C /* Frameworks */,
+				536E26056F0E25656858A4BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,6 +218,7 @@
 				9FB89733235231C1004C3B85 /* Info.plist */,
 				9FB897C52354AEC5004C3B85 /* TripListViewModelTests.swift */,
 				9FB897C72354AEEE004C3B85 /* TripDetailViewModelTests.swift */,
+				9FA16368235507CC00FF60FE /* TripCellViewModelTests.swift */,
 			);
 			path = EmpireMobileAppTests;
 			sourceTree = "<group>";
@@ -427,24 +440,14 @@
 		B0751295CF04E97307155B91 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7BFDA84938F8D34E065A5E69 /* Pods-EmpireMobileApp.debug.xcconfig */,
-				60003DA42FBB17B3408345D5 /* Pods-EmpireMobileApp.release.xcconfig */,
-				6A313B1F1340DAB7900D26BF /* Pods-EmpireMobileAppTests.debug.xcconfig */,
-				54455089E435D1BABE4390C5 /* Pods-EmpireMobileAppTests.release.xcconfig */,
-				F43F8EA97ACCB8D23CA05C83 /* Pods-EmpireMobileAppUITests.debug.xcconfig */,
-				A087C61F03B37DDE06FEDDAB /* Pods-EmpireMobileAppUITests.release.xcconfig */,
+				30A5B39C31B8CAEBFAFCA34B /* Pods-EmpireMobileApp.debug.xcconfig */,
+				6D001AAC341A688502305E7B /* Pods-EmpireMobileApp.release.xcconfig */,
+				14F55E14B04CF5445C62FE34 /* Pods-EmpireMobileApp-EmpireMobileAppUITests.debug.xcconfig */,
+				A159C770525B8DAC0860BA2E /* Pods-EmpireMobileApp-EmpireMobileAppUITests.release.xcconfig */,
+				66915BFE11CD7746A006C31D /* Pods-EmpireMobileAppTests.debug.xcconfig */,
+				7B6E81BD99061DB478133EDD /* Pods-EmpireMobileAppTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		C610311410A25AD64B80CC3C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E269977F6FB23FD14D146F86 /* Pods_EmpireMobileApp.framework */,
-				C884EA6A4F7F3046121EA2A3 /* Pods_EmpireMobileAppTests.framework */,
-				6326B5020A2D097ECB3E1FAD /* Pods_EmpireMobileAppUITests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,11 +457,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FB89741235231C1004C3B85 /* Build configuration list for PBXNativeTarget "EmpireMobileApp" */;
 			buildPhases = (
-				62DFAEEAF901ADA0DBB8CEC6 /* [CP] Check Pods Manifest.lock */,
+				935D6FBA07F4E96635FE8030 /* [CP] Check Pods Manifest.lock */,
 				9FB89713235231BD004C3B85 /* Sources */,
 				9FB89714235231BD004C3B85 /* Frameworks */,
 				9FB89715235231BD004C3B85 /* Resources */,
-				6177356D696912686178587E /* [CP] Embed Pods Frameworks */,
+				4FCFC7C15087FCB2274750F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -473,11 +476,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FB89744235231C1004C3B85 /* Build configuration list for PBXNativeTarget "EmpireMobileAppTests" */;
 			buildPhases = (
-				9AA67946FB7D44AC2E1BDD45 /* [CP] Check Pods Manifest.lock */,
+				0C77D13D434251DC49271BE9 /* [CP] Check Pods Manifest.lock */,
 				9FB89729235231C1004C3B85 /* Sources */,
 				9FB8972A235231C1004C3B85 /* Frameworks */,
 				9FB8972B235231C1004C3B85 /* Resources */,
-				6257E4D9DFFACA87F1C0B7FB /* [CP] Embed Pods Frameworks */,
+				C97BDF263A73BE486F6F01C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -493,10 +496,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FB89747235231C1004C3B85 /* Build configuration list for PBXNativeTarget "EmpireMobileAppUITests" */;
 			buildPhases = (
-				0A7BE0ED31820C0E5D5C8477 /* [CP] Check Pods Manifest.lock */,
+				5F090B1DBDEA1B77654F2021 /* [CP] Check Pods Manifest.lock */,
 				9FB89734235231C1004C3B85 /* Sources */,
 				9FB89735235231C1004C3B85 /* Frameworks */,
 				9FB89736235231C1004C3B85 /* Resources */,
+				69E5D9B6DDB63A8C3763BE96 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -583,7 +587,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A7BE0ED31820C0E5D5C8477 /* [CP] Check Pods Manifest.lock */ = {
+		0C77D13D434251DC49271BE9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -598,14 +602,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EmpireMobileAppUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EmpireMobileAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6177356D696912686178587E /* [CP] Embed Pods Frameworks */ = {
+		4FCFC7C15087FCB2274750F8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -622,24 +626,46 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileApp/Pods-EmpireMobileApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6257E4D9DFFACA87F1C0B7FB /* [CP] Embed Pods Frameworks */ = {
+		5F090B1DBDEA1B77654F2021 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmpireMobileApp-EmpireMobileAppUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		62DFAEEAF901ADA0DBB8CEC6 /* [CP] Check Pods Manifest.lock */ = {
+		69E5D9B6DDB63A8C3763BE96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileApp-EmpireMobileAppUITests/Pods-EmpireMobileApp-EmpireMobileAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileApp-EmpireMobileAppUITests/Pods-EmpireMobileApp-EmpireMobileAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileApp-EmpireMobileAppUITests/Pods-EmpireMobileApp-EmpireMobileAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		935D6FBA07F4E96635FE8030 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -661,26 +687,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9AA67946FB7D44AC2E1BDD45 /* [CP] Check Pods Manifest.lock */ = {
+		C97BDF263A73BE486F6F01C3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EmpireMobileAppTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -732,6 +753,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FB897C42354A9D1004C3B85 /* Mock.generated.swift in Sources */,
+				9FA16369235507CC00FF60FE /* TripCellViewModelTests.swift in Sources */,
 				9FB897C82354AEEE004C3B85 /* TripDetailViewModelTests.swift in Sources */,
 				9FB897C62354AEC5004C3B85 /* TripListViewModelTests.swift in Sources */,
 			);
@@ -888,7 +910,7 @@
 		};
 		9FB89742235231C1004C3B85 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BFDA84938F8D34E065A5E69 /* Pods-EmpireMobileApp.debug.xcconfig */;
+			baseConfigurationReference = 30A5B39C31B8CAEBFAFCA34B /* Pods-EmpireMobileApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -908,7 +930,7 @@
 		};
 		9FB89743235231C1004C3B85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60003DA42FBB17B3408345D5 /* Pods-EmpireMobileApp.release.xcconfig */;
+			baseConfigurationReference = 6D001AAC341A688502305E7B /* Pods-EmpireMobileApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -928,7 +950,7 @@
 		};
 		9FB89745235231C1004C3B85 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A313B1F1340DAB7900D26BF /* Pods-EmpireMobileAppTests.debug.xcconfig */;
+			baseConfigurationReference = 66915BFE11CD7746A006C31D /* Pods-EmpireMobileAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -951,7 +973,7 @@
 		};
 		9FB89746235231C1004C3B85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54455089E435D1BABE4390C5 /* Pods-EmpireMobileAppTests.release.xcconfig */;
+			baseConfigurationReference = 7B6E81BD99061DB478133EDD /* Pods-EmpireMobileAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -974,9 +996,8 @@
 		};
 		9FB89748235231C1004C3B85 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F43F8EA97ACCB8D23CA05C83 /* Pods-EmpireMobileAppUITests.debug.xcconfig */;
+			baseConfigurationReference = 14F55E14B04CF5445C62FE34 /* Pods-EmpireMobileApp-EmpireMobileAppUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WULF96SQ4T;
 				INFOPLIST_FILE = EmpireMobileAppUITests/Info.plist;
@@ -995,9 +1016,8 @@
 		};
 		9FB89749235231C1004C3B85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A087C61F03B37DDE06FEDDAB /* Pods-EmpireMobileAppUITests.release.xcconfig */;
+			baseConfigurationReference = A159C770525B8DAC0860BA2E /* Pods-EmpireMobileApp-EmpireMobileAppUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WULF96SQ4T;
 				INFOPLIST_FILE = EmpireMobileAppUITests/Info.plist;

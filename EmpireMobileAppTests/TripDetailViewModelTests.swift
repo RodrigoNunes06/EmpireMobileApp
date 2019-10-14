@@ -9,6 +9,7 @@
 import XCTest
 import RxSwift
 import RxTest
+import RxCocoa
 
 @testable import EmpireMobileApp
 

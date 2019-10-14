@@ -9,27 +9,33 @@
 import XCTest
 
 class EmpireMobileAppUITests: XCTestCase {
+    
+    var app: XCUIApplication!
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+        super.setUp()
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app = XCUIApplication()
+        app.launchArguments.append("--uitesting")
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
     }
 
-    func testExample() {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+    func testNavigationTitleExists() {
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssertTrue(app.navigationBars.staticTexts["LAST TRIPS"].exists)
+    }
+    
+    func testWhenTappingOnCellNavigatesToDetail() {
+        app.launch()
+        app.tables.cells.firstMatch.tap()
+        XCTAssertTrue(app.staticTexts["Departure"].exists)
+        XCTAssertTrue(app.staticTexts["Arrival"].exists)
+        XCTAssertTrue(app.staticTexts["Trip Distance"].exists)
+        XCTAssertTrue(app.staticTexts["Trip Duration"].exists)
+        XCTAssertTrue(app.staticTexts["Pilot Rating"].exists)
     }
 
     func testLaunchPerformance() {
