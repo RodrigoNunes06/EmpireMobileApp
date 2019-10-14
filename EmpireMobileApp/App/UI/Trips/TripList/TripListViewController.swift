@@ -11,6 +11,8 @@ import RxSwift
 
 class TripListViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
+    @IBOutlet private var activityIndicator: UIActivityIndicatorView!
+    
     private let viewModel: TripListViewModelApi!
     private let disposeBag = DisposeBag()
     
@@ -26,9 +28,15 @@ class TripListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
+        setupActivityIndicator()
         setupTableView()
         setupRx()
         viewModel.onViewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupNavigationBar()
     }
 }
 
@@ -38,6 +46,12 @@ private extension TripListViewController {
         self.navigationController?.navigationBar.barTintColor = .black
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         self.navigationController?.navigationBar.isTranslucent = false
+    }
+    
+    func setupActivityIndicator() {
+        activityIndicator.isHidden = true
+        activityIndicator.layer.cornerRadius = 4
+        activityIndicator.hidesWhenStopped = true
     }
     
     func setupTableView() {
@@ -50,6 +64,15 @@ private extension TripListViewController {
     }
     
     func setupRx() {
+        viewModel.showLoading.subscribe(onNext: {[unowned self] show in
+            if show {
+                self.activityIndicator.isHidden = false
+                self.activityIndicator.startAnimating()
+            } else {
+                self.activityIndicator.stopAnimating()
+            }
+        }).disposed(by: disposeBag)
+        
         viewModel.reloadAction.subscribe(onNext: {[unowned self] in
             self.tableView.reloadData()
         }).disposed(by: disposeBag)
@@ -74,6 +97,6 @@ extension TripListViewController: UITableViewDelegate, UITableViewDataSource {
     
     //MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Show detail
+        viewModel.onTapCell(index: indexPath.row)
     }
 }

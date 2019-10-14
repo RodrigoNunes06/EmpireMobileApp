@@ -36,7 +36,7 @@ class TripCellViewModel: TripCellViewModelApi {
         self.pilotRating = Observable.just(pilot.rating)
         self.pickupLocation = Observable.just(pickupLocation)
         self.dropOffLocation = Observable.just(dropOffLocation)
-        self.pilotRatingValue = pilot.rating ?? 0
+        self.pilotRatingValue = pilot.rating
     }
     
     func getRatingViewModel() -> RatingViewViewModel {

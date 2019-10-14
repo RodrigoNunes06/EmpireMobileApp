@@ -8,15 +8,16 @@
 
 import Foundation
 import RxSwift
-import RxCocoa
 
 protocol TripListViewModelApi {
     var onError: Observable<Error> { get }
     var reloadAction: Observable<Void> { get }
+    var showLoading: Observable<Bool> { get }
     func onViewDidLoad()
     func numberOfRows() -> Int
     func cellViewModel(index: Int) -> TripCellViewModel
     func cellIdentifier() -> String
+    func onTapCell(index: Int)
 }
 
 class TripListViewModel {
@@ -25,6 +26,7 @@ class TripListViewModel {
     private var trips: [Trip] = []
     private var reload = PublishSubject<Void>()
     private var error = PublishSubject<Error>()
+    private var loading = PublishSubject<Bool>()
     
     init(coordinator: TripCoordinatorApi, getTripsUseCase: GetTripsUseCase) {
         self.getTripsUseCase = getTripsUseCase
@@ -33,6 +35,14 @@ class TripListViewModel {
 }
 
 extension TripListViewModel: TripListViewModelApi {
+    func onTapCell(index: Int) {
+        coordinator.showTripDetail(trip: trips[index])
+    }
+    
+    var showLoading: Observable<Bool> {
+        loading.asObservable()
+    }
+    
     var onError: Observable<Error> {
         return error.asObservable()
     }
@@ -66,4 +76,3 @@ extension TripListViewModel: TripListViewModelApi {
         TripCell.reuseIdentifier()
     }
 }
-
