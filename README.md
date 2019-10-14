@@ -4,7 +4,7 @@ A simple app that shows the last trips of stormtroopers and its details.
 
 ### Prerequisites
 
-Having XCode 11.1 and cocoapods.
+Having XCode 11.1 and Cocoapods.
 
 ### Installing
 
@@ -27,4 +27,7 @@ All interfaces are mocked using SwiftyMocky.
 
 For this project I used a simple MVVM + Coordinator architecture as I think is simple and flexible and separates responsibilities correctly.
 
-
+### Comments
+There are some compromises I had to do in order to go faster.
+for example the Detail screen should be separated in more components as the constraints can get a bit messy.
+Also the TripDetailViewModel could be improved by creating a model to pass to the view, so all those properties can be avoided.
