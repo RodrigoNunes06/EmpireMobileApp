@@ -12,6 +12,7 @@ target 'EmpireMobileApp' do
   target 'EmpireMobileAppTests' do
     inherit! :search_paths
     pod 'SwiftyMocky'
+    pod 'RxTest'
   end
 
   target 'EmpireMobileAppUITests' do

@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum RatingStarsStyle {
+enum RatingStarsStyle: Equatable {
     case big
     case small
 }
 
-struct RatingViewViewModel {
+struct RatingViewViewModel: Equatable {
     let rating: Int
     let style: RatingStarsStyle
 }

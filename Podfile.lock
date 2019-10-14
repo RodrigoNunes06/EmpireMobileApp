@@ -9,6 +9,8 @@ PODS:
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
+  - RxTest (5.0.0):
+    - RxSwift (~> 5)
   - Sourcery (0.17.0)
   - SwiftyMocky (3.3.4):
     - SwiftyMocky/Core (= 3.3.4)
@@ -20,6 +22,7 @@ DEPENDENCIES:
   - Kingfisher
   - RxCocoa
   - RxSwift
+  - RxTest
   - SwiftyMocky
 
 SPEC REPOS:
@@ -30,6 +33,7 @@ SPEC REPOS:
     - RxSwift
   trunk:
     - Kingfisher
+    - RxTest
     - Sourcery
     - SwiftyMocky
 
@@ -39,9 +43,10 @@ SPEC CHECKSUMS:
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  RxTest: 4349afe98f564e0a9bc19063368904622d17d49a
   Sourcery: 3ed61be7c8a1218fce349266139379dba477efe0
   SwiftyMocky: 7e4e7088166c013559a26ccc8b8d6508c3730826
 
-PODFILE CHECKSUM: 2f3c6a0e0dadd9546241fdc2e973121a5444b4a3
+PODFILE CHECKSUM: 9687249b96f756dcb40d844626a435dcf134a684
 
 COCOAPODS: 1.8.3
