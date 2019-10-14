@@ -8,12 +8,21 @@
 
 import Foundation
 
-final class GetTripUseCase: BaseUseCase<TripRepository> {
+typealias TripUseCaseResponse = (Trip?, Error?) -> Void
+
+//sourcery: AutoMockable
+protocol GetTripUseCaseApi {
+    func execute(withId id: Int, completion: @escaping TripUseCaseResponse)
+}
+
+final class GetTripUseCase: GetTripUseCaseApi {
+    private let repository: TripRepository
+    
     init() {
-        super.init(repository: TripRepositoryImpl())
+        self.repository = TripRepositoryImpl()
     }
     
-    func execute(withId id: Int, completion: @escaping(Trip?, Error?) -> Void) {
+    func execute(withId id: Int, completion: @escaping TripUseCaseResponse) {
         repository.trip(withId: id) { (trip, error) in
             completion(trip, error)
         }

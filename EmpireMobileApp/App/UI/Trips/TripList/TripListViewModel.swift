@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 
+//sourcery: AutoMockable
 protocol TripListViewModelApi {
     var onError: Observable<Error> { get }
     var reloadAction: Observable<Void> { get }

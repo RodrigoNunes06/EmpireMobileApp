@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 
+//sourcery: AutoMockable
 protocol TripDetailViewModelApi {
     var pilotName: Observable<String> {get}
     var pilotAvatar: Observable<URL> { get }
@@ -32,7 +33,6 @@ class TripDetailViewModel {
 }
 
 extension TripDetailViewModel: TripDetailViewModelApi {
-    
     var pilotAvatar: Observable<URL> {
         return Observable.just(trip.pilot.avatar).map { (urlString) -> URL in
             guard let url = URL(string: urlString) else {

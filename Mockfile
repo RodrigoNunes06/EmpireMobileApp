@@ -1,0 +1,14 @@
+sourceryCommand: null
+EmpireMobileAppTests:
+  sources:
+    include:
+    - ./EmpireMobileApp
+  output: ./EmpireMobileAppTests/Mock.generated.swift
+  targets:
+  - EmpireMobileAppTests
+  testable:
+  - EmpireMobileApp
+  import:
+  - Foundation
+  - RxSwift
+ 

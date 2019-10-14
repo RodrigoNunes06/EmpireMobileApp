@@ -51,6 +51,7 @@
 		9FB897BD23535A13004C3B85 /* TripCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB897BC23535A13004C3B85 /* TripCoordinator.swift */; };
 		9FB897C023537657004C3B85 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB897BF23537657004C3B85 /* NibView.swift */; };
 		9FB897C223537696004C3B85 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB897C123537696004C3B85 /* UIViewExtension.swift */; };
+		9FB897C42354A9D1004C3B85 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB897C32354A9D1004C3B85 /* Mock.generated.swift */; };
 		F6502AF8211261D13099B191 /* Pods_EmpireMobileAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6326B5020A2D097ECB3E1FAD /* Pods_EmpireMobileAppUITests.framework */; };
 		FE789A4FCE519F01F156DF15 /* Pods_EmpireMobileApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E269977F6FB23FD14D146F86 /* Pods_EmpireMobileApp.framework */; };
 /* End PBXBuildFile section */
@@ -127,6 +128,7 @@
 		9FB897BC23535A13004C3B85 /* TripCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCoordinator.swift; sourceTree = "<group>"; };
 		9FB897BF23537657004C3B85 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		9FB897C123537696004C3B85 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		9FB897C32354A9D1004C3B85 /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
 		A087C61F03B37DDE06FEDDAB /* Pods-EmpireMobileAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileAppUITests.release.xcconfig"; path = "Target Support Files/Pods-EmpireMobileAppUITests/Pods-EmpireMobileAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C884EA6A4F7F3046121EA2A3 /* Pods_EmpireMobileAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmpireMobileAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E269977F6FB23FD14D146F86 /* Pods_EmpireMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmpireMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +200,7 @@
 		9FB89730235231C1004C3B85 /* EmpireMobileAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				9FB897C32354A9D1004C3B85 /* Mock.generated.swift */,
 				9FB89731235231C1004C3B85 /* EmpireMobileAppTests.swift */,
 				9FB89733235231C1004C3B85 /* Info.plist */,
 			);
@@ -471,6 +474,7 @@
 				9FB89729235231C1004C3B85 /* Sources */,
 				9FB8972A235231C1004C3B85 /* Frameworks */,
 				9FB8972B235231C1004C3B85 /* Resources */,
+				6257E4D9DFFACA87F1C0B7FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -615,6 +619,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileApp/Pods-EmpireMobileApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6257E4D9DFFACA87F1C0B7FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmpireMobileAppTests/Pods-EmpireMobileAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		62DFAEEAF901ADA0DBB8CEC6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -707,6 +728,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB897C42354A9D1004C3B85 /* Mock.generated.swift in Sources */,
 				9FB89732235231C1004C3B85 /* EmpireMobileAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+
+//sourcery: AutoMockable
 protocol TripCoordinatorApi {
     func showTripList()
     func showTripDetail(trip: Trip)

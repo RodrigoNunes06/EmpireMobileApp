@@ -9,12 +9,18 @@ PODS:
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
+  - Sourcery (0.17.0)
+  - SwiftyMocky (3.3.4):
+    - SwiftyMocky/Core (= 3.3.4)
+  - SwiftyMocky/Core (3.3.4):
+    - Sourcery (>= 0.16)
 
 DEPENDENCIES:
   - Alamofire
   - Kingfisher
   - RxCocoa
   - RxSwift
+  - SwiftyMocky
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -24,6 +30,8 @@ SPEC REPOS:
     - RxSwift
   trunk:
     - Kingfisher
+    - Sourcery
+    - SwiftyMocky
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
@@ -31,7 +39,9 @@ SPEC CHECKSUMS:
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  Sourcery: 3ed61be7c8a1218fce349266139379dba477efe0
+  SwiftyMocky: 7e4e7088166c013559a26ccc8b8d6508c3730826
 
-PODFILE CHECKSUM: 1be59b866d50afa83de47126c1b6e9847c72eff3
+PODFILE CHECKSUM: 2f3c6a0e0dadd9546241fdc2e973121a5444b4a3
 
 COCOAPODS: 1.8.3
