@@ -25,7 +25,7 @@ protocol TripDetailViewModelApi {
 }
 
 class TripDetailViewModel {
-    let trip: Trip!
+    private let trip: Trip!
     
     init(trip: Trip) {
         self.trip = trip

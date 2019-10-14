@@ -25,9 +25,9 @@ class TripListViewModel {
     private let getTripsUseCase: GetTripsUseCase!
     private let coordinator: TripCoordinatorApi!
     private var trips: [Trip] = []
-    private var reload = PublishSubject<Void>()
-    private var error = PublishSubject<Error>()
-    private var loading = PublishSubject<Bool>()
+    private let reload = PublishSubject<Void>()
+    private let error = PublishSubject<Error>()
+    private let loading = PublishSubject<Bool>()
     
     init(coordinator: TripCoordinatorApi, getTripsUseCase: GetTripsUseCase) {
         self.getTripsUseCase = getTripsUseCase

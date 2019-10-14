@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import SwiftyMocky
 import RxSwift
 import RxTest
 
