@@ -10,28 +10,35 @@ import Foundation
 import UIKit
 
 protocol TripCoordinatorApi {
-    func createTripList() -> UIViewController
-    func showTripDetail()
+    func showTripList()
+    func showTripDetail(trip: Trip)
+    func start()
 }
 
 class TripCoordinator {
     private let navigationController: UINavigationController!
     
-    init() {
-        self.navigationController = UINavigationController()
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
     }
 }
 
 extension TripCoordinator: TripCoordinatorApi {
-    func createTripList() -> UIViewController {
-        let getTripsUseCase = GetTripsUseCase()
-        let tripListViewModel = TripListViewModel(coordinator: self,
-                                                  getTripsUseCase: getTripsUseCase)
-        let tripListViewController = TripListViewController(viewModel: tripListViewModel)
-        return tripListViewController
+    func start() {
+        showTripList()
     }
     
-    func showTripDetail() {
-        
+    func showTripList()  {
+        let getTripsUseCase = GetTripsUseCase()
+        let tripListVM = TripListViewModel(coordinator: self,
+                                           getTripsUseCase: getTripsUseCase)
+        let tripListVC = TripListViewController(viewModel: tripListVM)
+        navigationController.pushViewController(tripListVC, animated: true)
+    }
+    
+    func showTripDetail(trip: Trip) {
+        let tripDetailVM = TripDetailViewModel(trip: trip)
+        let tripDetailVC = TripDetailViewController(viewModel: tripDetailVM)
+        navigationController.pushViewController(tripDetailVC, animated: true)
     }
 }

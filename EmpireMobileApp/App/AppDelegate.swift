@@ -13,10 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let navController = UINavigationController()
+        let tripCoordinator = TripCoordinator(navigationController: navController)
+        tripCoordinator.start()
         window = UIWindow(frame: UIScreen.main.bounds)
-        let tripCoordinator = TripCoordinator()
-        let rootVc = tripCoordinator.createTripList()
-        window?.rootViewController = UINavigationController(rootViewController: rootVc)
+        window?.rootViewController = navController
         window?.makeKeyAndVisible()
         return true
     }
